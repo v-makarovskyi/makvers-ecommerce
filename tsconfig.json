@@ -17,7 +17,7 @@
     "paths": {
       "@/public/*": ["public/*"],
       "@/components/*": ["components/*"],
-      "@/types": ["types"],
+      "@/types/*": ["types/*"],
       "@/modules/*": ["modules/*"],
       "@/store/*": ["store/*"],
       "@/store": ["store"],
