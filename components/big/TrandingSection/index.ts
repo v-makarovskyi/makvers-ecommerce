@@ -1,0 +1,1 @@
+export {TrandingSection} from './TrandingSection'
