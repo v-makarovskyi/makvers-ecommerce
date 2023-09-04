@@ -1,2 +1,1 @@
-import { MoreInfo } from './MoreInfo';
-export { MoreInfo }
+export { MoreInfo } from './MoreInfo';
