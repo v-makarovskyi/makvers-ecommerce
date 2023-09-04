@@ -1,0 +1,145 @@
+@use "@/styles/mediaMixin" as media;
+@use "@/styles/fontsMixin" as fonts;
+
+$linksHeadersFont: 18px "Unna", serif;
+$linksFont: 15px "Unna", serif;
+
+.footer {
+  height: 100%;
+  background-image: url("../../../public/assets/FooterBackground.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  background: transparent !important;
+  backdrop-filter: brightness(40%);
+  margin-bottom: 0px !important;
+  height: 100% !important;
+  border-bottom: none;
+  position: relative;
+}
+
+.footerSlogan {
+  @include media.media(xs) {
+    font-size: 28px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include fonts.fontMixin("fontEspacial");
+  font: 38px "Caveat", cursive;
+  line-height: 65px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: rgba($color: floralwhite, $alpha: 0.8);
+}
+
+.rowContentWrapper {
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  .headers {
+    font: $linksHeadersFont;
+  }
+
+  .links {
+    margin-top: 20px;
+    font: $linksFont;
+    padding: 0;
+    text-align: center;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linksMedia {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 100%;
+    opacity: 0.7;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutLink {
+    font: 18px "Lora", serif;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: floralwhite;
+    opacity: 0.5;
+    transition: ease-in-out 0.5s;
+    &:hover {
+      transition: ease-in 0.5s;
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+
+  .a {
+    text-decoration: none;
+    text-decoration-color: none;
+    color: rgba($color: floralwhite, $alpha: 0.75);
+    &:hover {
+      text-decoration: none;
+      text-decoration-color: none;
+      color: rgba($color: floralwhite, $alpha: 1);
+    }
+  }
+
+  .newLetterForm {
+    @include media.media(xs) {
+      font-size: 12px;
+    }
+    font: $linksHeadersFont;
+    letter-spacing: 1px;
+    opacity: 1;
+  }
+
+  .customInput {
+    @include media.media(xs) {
+      font-size: 12px;
+    }
+    background-color: rgba($color: grey, $alpha: 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px 2px 0 2px;
+    color: floralwhite;
+    border: none;
+    font-style: italic;
+
+    &::placeholder {
+      color: rgba($color: floralwhite, $alpha: 0.45);
+    }
+  }
+
+  .customButton {
+    @include media.media(xs) {
+      font-size: 12px;
+    }
+    background: #1a3b49;
+    font-family: "Lora", serif;
+    letter-spacing: 1px;
+    border-radius: 0px 0px 2px 0px;
+  }
+}
+
+.smallLettersWrapper {
+    @include media.media(xs) {
+        padding-bottom: 0;
+    }
+    color: rgba($color: floralwhite, $alpha: 0.4);
+    font-family: 'Unna', serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
