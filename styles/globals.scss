@@ -7,13 +7,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Tangerine&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display+SC&family=Tangerine&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display+SC&family=Tangerine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Tangerine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Italianno&display=swap');
 
 .navbar {
     background: whitesmoke;
     font-family: 'Unna', sans-serif;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
 }
