@@ -1,1 +1,1 @@
-export {SeeMoreButton} from './SeeMoreButton';
+export { SeeMoreButton } from './SeeMoreButton';
