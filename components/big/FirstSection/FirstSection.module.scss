@@ -1,0 +1,69 @@
+@use '@/styles/_mediaMixin' as mixin;
+
+
+.customContainer {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+
+    .videoWrapper {
+        @include mixin.media(xs) {
+            width: 100%;
+        }
+        @include mixin.media(sm) {
+            width: 50%;
+        }
+
+        position: absolute;
+        overflow: visible;
+        width: 25%;
+        left: 60%;
+        top: 0;
+        transform: translate(-60%, 0);
+    }
+
+    .divOverflow {
+        @include mixin.media(xs) {
+            height: 75%;
+        }
+        @include mixin.media(sm) {
+            height: 75%;
+        }
+
+        width: 100%;
+        height: 90%;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        background-color: white;
+        opacity: 1;
+        transform: skewY(10deg);
+        transform-origin: 0 0;
+        overflow: visible;
+        color: floralwhite;
+    }
+
+    .phantomDiv {
+        height: 150px;
+        color: transparent;
+        z-index: 9;
+
+        @include mixin.media(xs) {
+            height: 50px;
+        }
+        @include mixin.media(sm) {
+            height: 70px;
+        }
+        @include mixin.media(md) {
+            height: 50px;
+        }
+        @include mixin.media(lg) {
+            height: 80px;
+        }
+    }
+}
+
+
+
+
