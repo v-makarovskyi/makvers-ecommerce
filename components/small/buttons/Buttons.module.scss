@@ -1,0 +1,47 @@
+@use "@/styles/_mediaMixin" as media;
+@use "@/styles/_fontsMixin" as fonts;
+
+$base-padding: 10px 15px;
+$base-opasity: 0.75;
+$base-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+@mixin buttonColor($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+
+  &:hover {
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+  }
+}
+
+@mixin linkColor($color) {
+  color: $color;
+  &:hover {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.default {
+    @include fonts.fontsMixin('fontButton');
+    border: none;
+    opacity: $base-opasity;
+    padding: $base-padding;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: $base-shadow;
+    transition: .5s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.seeMore {
+    @extend .default;
+    @include buttonColor(#4384A9, transparent);
+}
+
+.cart {
+  background-color: transparent;
+  border: none;
+  display: flex;
+}
