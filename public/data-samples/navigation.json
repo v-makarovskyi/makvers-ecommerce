@@ -1,22 +1,22 @@
 [
     {
       "name": "Rings",
-      "path": "/rings",
+      "path": "rings",
       "image": "/assets/CategoriesThumbnails/RingsThumbnail.jpg"
     },
     {
       "name": "Necklaces",
-      "path": "/necklaces",
+      "path": "necklaces",
       "image": "/assets/CategoriesThumbnails/NecklacesThumbnail.jpg"
     },
     {
       "name": "Earring",
-      "path": "/earrings",
+      "path": "earrings",
       "image": "/assets/CategoriesThumbnails/EarringsThumbnail.jpg"
     },
     {
       "name": "Watches",
-      "path": "/watches",
+      "path": "watches",
       "image": "/assets/CategoriesThumbnails/WatchesThumbnail.jpg"
     }
   ]
