@@ -18,6 +18,6 @@ $breackpoint-xl: 1904px;
         @media(min-width: $breackpoint-lg) {@content;}
     }
     @else if $media == xl {
-        @media(min-width: $breackpoint-xl) {content;}
+        @media(min-width: $breackpoint-xl) {@content;}
     }
 }
