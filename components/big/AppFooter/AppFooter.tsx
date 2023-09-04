@@ -62,7 +62,7 @@ export const AppFooter: React.FC<AppFooterProps> = ({linksCategories, supportLin
           <Col xs={4} md={2} lg={1}>
             <div className='text-center'>
               <h1 className={styles.headers}>Contacts Us</h1>
-              <div className={styles.links}>
+              <div className={styles.linksMedia}>
                 {
                   socialMediaIcons.map((icon) => (
                     <a className={styles.a} key={icon} href='#'>
@@ -90,6 +90,11 @@ export const AppFooter: React.FC<AppFooterProps> = ({linksCategories, supportLin
             </div>
           </Col>
         </Row>
+        <div className={styles.smallLettersWrapper}>
+          <small className={styles.smallLetter}>
+            Makvers - {new Date().getFullYear()}
+          </small>
+        </div>
       </div>
     </footer>
   )
